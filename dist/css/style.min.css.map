@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAEA,EACE,QAAQ,CACR,SAAS,CAGX,MACE,mBAAS,CAAT,mBAAS,CAAT,YAAS,CAGX,YACE,aAZW","file":"../scss/style.min.css","sourcesContent":["$base-color: #616983;\r\n\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.flex {\r\n  display: flex;\r\n}\r\n\r\n.base-color {\r\n  color: $base-color;\r\n}\r\n\r\n"]}

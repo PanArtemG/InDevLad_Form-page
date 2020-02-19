@@ -1,0 +1,15 @@
+$base-color: #616983;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.base-color {
+  color: $base-color;
+}
+
