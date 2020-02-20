@@ -1,8 +1,6 @@
 @import "variable";
 
 .rb-wrap {
-  display: flex;
-  align-items: center;
   justify-content: space-around;
   height: 20vh;
   width: 90%;
@@ -13,10 +11,7 @@
 }
 
 .btn-file + label {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  //height: 100%;
   width: 30%;
   border: 1px solid $border;
   border-radius: 5px;
@@ -27,47 +22,30 @@
   background: url("../image/web-page.png") no-repeat;
 }
 
-.btn-file + label .btn-span:after {
-  content: '';
-  width: 6.5em;
-  font-size: .6em;
-  position: absolute;
-  bottom: -10px;
+.label-type-doc {
+  margin-bottom: 10px;
+  font-size: .5em;
   color: $mainFontColor;
   font-weight: bold;
-}
-
-.btn-file + label .btn-web:after {
-  content: 'Website';
-  left: 1px;
+  white-space: nowrap;
 }
 
 .btn-file + label .btn-doc {
   background: url("../image/document.png") no-repeat;
 }
 
-.btn-file + label .btn-doc:after {
-  content: 'Document';
-  left: -4px;
-}
-
 .btn-file + label .btn-soc {
   background: url("../image/social.png") no-repeat;
 }
 
-.btn-file + label .btn-soc:after {
-  content: 'Social Acount';
-  left: -12px;
-}
-
-
 .btn-file + label .btn-span {
   display: inline-block;
-  height: 10vh;
+  height: 6vh;
   width: 50%;
-  margin: 10px;
+  margin: 10px 10px 0;
   position: relative;
   background-size: contain;
+  background-position-x: center;
   cursor: pointer;
 }
 
@@ -79,7 +57,7 @@
   position: absolute;
   top: -10px;
   right: -10px;
-  background: white url('../image/check-mark.svg');
+  background: #ffffff url('../image/check-mark.svg');
   background-size: cover;
 }
 

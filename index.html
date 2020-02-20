@@ -5,34 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>In Dev Lab test</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="../dist/css/style.min.css">
 </head>
 <body class='container'>
-<h1>HELLO</h1>
-<div class='rb-wrap'>
-  <input id='rbWebsite' class='radio-btn btn-file'
-         type='radio'
-         name="type"
-         value="website">
-  <label for='rbWebsite'>
-    <span class='btn-span btn-web'></span>
-  </label>
-  <input id='rbDocument' class='radio-btn btn-file'
-         type='radio'
-         name="type"
-         value="document">
-  <label for='rbDocument'>
-    <span class='btn-span btn-doc'></span>
-  </label>
-  <input id='rbSocial' class='radio-btn btn-file'
-         type='radio'
-         name="type"
-         value="social">
-  <label for='rbSocial'>
-    <span class='btn-span btn-soc'></span>
-  </label>
-</div>
+<header class='d-flex align-items-center justify-content-center'>
+  <a class='logo m-3' href='#'></a>
+</header>
+<main class='main d-flex align-items-center  flex-column justify-content-between'>
+
+
+  <section class='main_header d-flex w-100'>
+
+    <div class='main_header-order_wrap d-flex'>
+
+      <div class='main_header-order d-flex flex-column p-3'>
+
+        <div class='main_header-order-title d-flex'>
+          <h6>YOUR ORDER</h6>
+        </div>
+        <div class='main_header-order-details d-flex'>
+          <div class='main_header-order_items'>
+            <p class='mb-0'>items</p>
+            <span>2 documents</span>
+          </div>
+          <div class='main_header-order_items'>
+            <p class='mb-0'>details</p>
+            <span>2 languages</span>
+          </div>
+          <div class='main_header-order_items'>
+            <p class='mb-0'>price</p>
+            <span>$ 696.06</span>
+          </div>
+          <div class='main_header-order_items'>
+            <p class='mb-0'>delivery</p>
+            <span>48 hours*</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class='main_header-order-confirm d-flex align-items-center p-3'>
+        <div class='main_header-btn btn-1'>
+          <span >PLACE ORDER</span>
+        </div>
+        <div class='main_header-btn btn-2'>
+          <span >PRINT A QUOTE</span>
+        </div>
+      </div>
+    </div>
+
+    <div class='main_header-help_center d-flex p-3'>
+      <h5>HELP CENTER</h5>
+      <p>If you need assistance while placing your order,contact one of you beloved Project Manager by phone or email.</p>
+      <a class="main_header-phone" href="tel:+9710555555">+971 (0) 555 555</a>
+      <a class="main_header-mail" href="mailto:help@qtest.com">help@qtest.com</a>
+    </div>
+  </section>
+
+
+  <div class='rb-wrap d-flex align-items-center'>
+    <input id='rbWebsite' class='radio-btn btn-file'
+           type='radio'
+           name="type"
+           value="website">
+    <label class='d-flex align-items-center flex-column' for='rbWebsite'>
+      <span class='btn-span btn-web'></span>
+      <span class='label-type-doc'>Website</span>
+    </label>
+    <input id='rbDocument' class='radio-btn btn-file'
+           type='radio'
+           name="type"
+           value="document">
+    <label class='d-flex align-items-center flex-column' for='rbDocument'>
+      <span class='btn-span btn-doc'></span>
+      <span class='label-type-doc'>Document</span>
+    </label>
+    <input id='rbSocial' class='radio-btn btn-file'
+           type='radio'
+           name="type"
+           value="social">
+    <label class='d-flex align-items-center flex-column' for='rbSocial'>
+      <span class='btn-span btn-soc'></span>
+      <span class='label-type-doc'>Social Account</span>
+    </label>
+  </div>
+</main>
+<!--d-flex align-items-center-->
 <script src="/dist/js/main.min.js"></script>
 </body>
 </html>

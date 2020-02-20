@@ -1,15 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
 @import "variable";
-@import "styleRBtnDoc";
+@import "headerStyle";
+@import "mainHeaderStyle";
+@import "selectTypeDocStyle";
 
-
-.container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
+* {
+  margin: 0;
+  padding: 0;
+  color: $mainFontColor;
 }
 
-h1 {
-  margin-bottom: 50px;
+h1, h2, h3, h4, h5, h5 {
+  color: $mainFontColor;
 }
+
+a, a:hover, a:visited {
+  text-decoration: none;
+  text-transform: none;
+  color: $mainFontColor;
+}
+
+body {
+  background-color: #edeff4;
+}
+
+.main {
+  background-color: #fff;
+  border: 1px solid #cad1e2;
+}
+

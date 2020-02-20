@@ -1,0 +1,72 @@
+@import "variable";
+
+.main_header {
+  border-bottom: 1px solid #cad1e2;
+  flex-direction: column;
+
+  &-order_wrap {
+    flex-direction: column;
+  }
+
+  &-order {
+    border-bottom: 1px solid #cad1e2;
+
+    .main_header-order-title {
+      justify-content: center;
+
+      h6 {
+        font-size: 1.3em;
+      }
+    }
+
+    .main_header-order-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3%;
+      font-size: .8em;
+
+      .main_header-order_items {
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .main_header-order_items > p {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .main_header-order_items > span {
+        color: $secFontColor;
+      }
+    }
+  }
+
+  &-order-confirm {
+    justify-content: space-around;
+    border-bottom: 1px solid #cad1e2;
+
+    .main_header-btn {
+      width: 45%;
+      padding: 1em 1%;
+      //padding: 1em 0;
+      border-radius: 5px;
+      background: #5ecbc8;
+      text-align: center;
+      font-size: .8em;
+      font-weight: bold;
+    }
+  }
+
+  &-help_center {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: .7em;
+      text-align: justify;
+    }
+  }
+
+}
