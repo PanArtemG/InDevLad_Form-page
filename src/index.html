@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>In Dev Lab test</title>
-    <link rel="stylesheet" href="../dist/css/style.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>In Dev Lab test</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="../dist/css/style.min.css">
 </head>
-<body>
+<body class='container'>
 <h1>HELLO</h1>
+<div class='rb-wrap'>
+  <input id='rbWebsite' class='radio-btn btn-file'
+         type='radio'
+         name="type"
+         value="website">
+  <label for='rbWebsite'>
+    <span class='btn-span btn-web'></span>
+  </label>
+  <input id='rbDocument' class='radio-btn btn-file'
+         type='radio'
+         name="type"
+         value="document">
+  <label for='rbDocument'>
+    <span class='btn-span btn-doc'></span>
+  </label>
+  <input id='rbSocial' class='radio-btn btn-file'
+         type='radio'
+         name="type"
+         value="social">
+  <label for='rbSocial'>
+    <span class='btn-span btn-soc'></span>
+  </label>
+</div>
 <script src="/dist/js/main.min.js"></script>
 </body>
 </html>

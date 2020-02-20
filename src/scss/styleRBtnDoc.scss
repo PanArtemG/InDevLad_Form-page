@@ -1,0 +1,88 @@
+@import "variable";
+
+.rb-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 20vh;
+  width: 90%;
+}
+
+.btn-file {
+  display: none;
+}
+
+.btn-file + label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //height: 100%;
+  width: 30%;
+  border: 1px solid $border;
+  border-radius: 5px;
+  position: relative;
+}
+
+.btn-file + label .btn-web {
+  background: url("../image/web-page.png") no-repeat;
+}
+
+.btn-file + label .btn-span:after {
+  content: '';
+  width: 6.5em;
+  font-size: .6em;
+  position: absolute;
+  bottom: -10px;
+  color: $mainFontColor;
+  font-weight: bold;
+}
+
+.btn-file + label .btn-web:after {
+  content: 'Website';
+  left: 1px;
+}
+
+.btn-file + label .btn-doc {
+  background: url("../image/document.png") no-repeat;
+}
+
+.btn-file + label .btn-doc:after {
+  content: 'Document';
+  left: -4px;
+}
+
+.btn-file + label .btn-soc {
+  background: url("../image/social.png") no-repeat;
+}
+
+.btn-file + label .btn-soc:after {
+  content: 'Social Acount';
+  left: -12px;
+}
+
+
+.btn-file + label .btn-span {
+  display: inline-block;
+  height: 10vh;
+  width: 50%;
+  margin: 10px;
+  position: relative;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.btn-file:checked + label:after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: white url('../image/check-mark.svg');
+  background-size: cover;
+}
+
+.btn-file:checked + label {
+  border: 3px solid $activeColor;
+}
