@@ -14,14 +14,9 @@
   <a class='logo m-3' href='#'></a>
 </header>
 <main class='main d-flex align-items-center  flex-column justify-content-between'>
-
-
   <section class='main_header d-flex w-100'>
-
     <div class='main_header-order_wrap d-flex'>
-
       <div class='main_header-order d-flex flex-column p-3'>
-
         <div class='main_header-order-title d-flex'>
           <svg
               class='main_header-icon_order icon'
@@ -60,19 +55,12 @@
             <span>48 hours*</span>
           </div>
         </div>
-
       </div>
-
       <div class='main_header-order-confirm d-flex align-items-center p-3'>
-        <div class='main_header-btn btn-1'>
-          <span>PLACE ORDER</span>
-        </div>
-        <div class='main_header-btn btn-2'>
-          <span>PRINT A QUOTE</span>
-        </div>
+        <span class='main_header-btn btn-place'>PLACE ORDER</span>
+        <span class='main_header-btn btn-print'>PRINT A QUOTE</span>
       </div>
     </div>
-
     <div class='main_header-help_center d-flex p-3'>
       <div class='main_header-order-title d-flex'>
         <svg
@@ -94,36 +82,93 @@
       <a class="main_header-mail" href="mailto:help@qtest.com">help@qtest.com</a>
     </div>
   </section>
+  <form class='d-flex flex-column justify-content-center align-items-center w-100' action='#'>
+    <section class='type_doc-wrap d-flex align-items-center flex-column'>
+      <h5 class='type_doc-title title'>SELECT WHAT YOU WANT TO TRANSLATE</h5>
+      <div class='type_doc-input_wrap d-flex w-100 align-items-center justify-content-around'>
+        <input id='rbWebsite' class='radio-btn btn-file'
+               type='radio'
+               name="type"
+               value="website"
+               required="">
+        <label class='d-flex align-items-center flex-column' for='rbWebsite'>
+          <span class='btn-span btn-web'></span>
+          <span class='label-type-doc'>Website</span>
+        </label>
+        <input id='rbDocument' class='radio-btn btn-file'
+               type='radio'
+               name="type"
+               value="document"
+               required="">
+        <label class='d-flex align-items-center flex-column' for='rbDocument'>
+          <span class='btn-span btn-doc'></span>
+          <span class='label-type-doc'>Document</span>
+        </label>
+        <input id='rbSocial' class='radio-btn btn-file'
+               type='radio'
+               name="type"
+               value="social"
+               required="">
+        <label class='d-flex align-items-center flex-column' for='rbSocial'>
+          <span class='btn-span btn-soc'></span>
+          <span class='label-type-doc'>Social Account</span>
+        </label>
+      </div>
+    </section>
+
+    <section class='mb-2 w-100'>
+      <div class='title-list-wrap d-flex align-items-center justify-content-start'>
+        <div class='title-list-num d-flex align-items-center justify-content-center'>
+          <span class=''>1</span>
+        </div>
+        <h6 class='title-list-item'>Upload your documents (Doc, Docx, Text, PDF, Markdown)</h6>
+      </div>
 
 
-  <div class='rb-wrap d-flex align-items-center'>
-    <input id='rbWebsite' class='radio-btn btn-file'
-           type='radio'
-           name="type"
-           value="website">
-    <label class='d-flex align-items-center flex-column' for='rbWebsite'>
-      <span class='btn-span btn-web'></span>
-      <span class='label-type-doc'>Website</span>
-    </label>
-    <input id='rbDocument' class='radio-btn btn-file'
-           type='radio'
-           name="type"
-           value="document">
-    <label class='d-flex align-items-center flex-column' for='rbDocument'>
-      <span class='btn-span btn-doc'></span>
-      <span class='label-type-doc'>Document</span>
-    </label>
-    <input id='rbSocial' class='radio-btn btn-file'
-           type='radio'
-           name="type"
-           value="social">
-    <label class='d-flex align-items-center flex-column' for='rbSocial'>
-      <span class='btn-span btn-soc'></span>
-      <span class='label-type-doc'>Social Account</span>
-    </label>
-  </div>
+      <div class="upload_input-wrapper">
+        <input type="file" class="upload_input hide-input" name="upload" id="uploadInput"
+               accept=".doc,.docx,.text,.pdf,.markdown" required="">
+        <label for="uploadInput" class="upload__input-label reset-input icon-element">
+          Upload a new file
+        </label>
+      </div>
+      <p class="upload__request-text">Please, upload your files.</p>
+      <table class="upload__table">
+        <thead>
+        <tr>
+          <th>File name</th>
+          <th>File size</th>
+          <th>Number of words</th>
+          <th>Remove</th>
+        </tr>
+        </thead>
+        <tbody class="upload__table-body"></tbody>
+      </table>
+    </section>
+
+    <section class='mb-2'>
+      <div class='d-flex align-items-center justify-content-start'>
+        <span>2</span>
+        <h6 class='title title-list-item'>Choose your languages pairings</h6>
+      </div>
+    </section>
+
+    <section class='mb-2'>
+      <div class='d-flex align-items-center justify-content-start'>
+        <span>3</span>
+        <h6 class='title title-list-item'>Select your desired tone / 4 Tell us how urgent this work is</h6>
+      </div>
+    </section>
+
+    <section class='mb-2'>
+      <div class='d-flex align-items-center justify-content-start'>
+        <span>5</span>
+        <h6 class='title title-list-item'>Sign up and choose a payment method</h6>
+      </div>
+    </section>
+
+  </form>
 </main>
-<!--d-flex align-items-center-->
 <script src="/dist/js/main.min.js"></script>
 </body>
 </html>

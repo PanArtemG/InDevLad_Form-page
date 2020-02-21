@@ -2,7 +2,8 @@
 @import "variable";
 @import "headerStyle";
 @import "mainHeaderStyle";
-@import "selectTypeDocStyle";
+@import "selectDocTypeStyle";
+@import "uploadSectionStyle";
 
 * {
   margin: 0;
@@ -11,7 +12,29 @@
 }
 
 h1, h2, h3, h4, h5, h5 {
+  margin: 0;
+  padding: 0;
   color: $mainFontColor;
+  text-transform: uppercase;
+}
+
+.title-list-wrap {
+  font-size: 1em;
+}
+
+.title-list-num {
+  height: 35px;
+  width: 35px;
+  margin: 1em;
+  border: 1px solid #d8dae1;
+  border-radius: 50%;
+}
+
+.title-list-item {
+  border: none;
+  margin: 0;
+  font-size: .7em;
+  letter-spacing: normal;
 }
 
 a, a:hover, a:visited {
