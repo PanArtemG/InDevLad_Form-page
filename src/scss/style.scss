@@ -11,6 +11,11 @@
   color: $mainFontColor;
 }
 
+html, body {
+  font-size: 14px;
+  margin-bottom: 200px;
+}
+
 h1, h2, h3, h4, h5, h5 {
   margin: 0;
   padding: 0;
@@ -18,14 +23,31 @@ h1, h2, h3, h4, h5, h5 {
   text-transform: uppercase;
 }
 
+.icon {
+  display: inline-block;
+  height: 1.4em;
+  width: 1.4em;
+  margin-right: 1em;
+}
+
+  .br-3 {
+  border: 1px solid $border;
+  border-radius: .33rem;
+}
+
+.btn-hover:hover {
+  box-shadow: 0 0 2px 2px  $activeColor;
+}
+
 .title-list-wrap {
   font-size: 1em;
 }
 
 .title-list-num {
-  height: 35px;
-  width: 35px;
-  margin: 1em;
+  height: 2.2rem;
+  width: 2.2rem;
+  margin-right: 1rem;
+  font-weight: bold;
   border: 1px solid #d8dae1;
   border-radius: 50%;
 }

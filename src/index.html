@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="../dist/css/style.min.css">
+  <link rel="stylesheet" href="image/font-awesome/css/font-awesome.min.css">
 </head>
 <body class='container'>
 <header class='d-flex align-items-center justify-content-center'>
@@ -57,8 +58,8 @@
         </div>
       </div>
       <div class='main_header-order-confirm d-flex align-items-center p-3'>
-        <span class='main_header-btn btn-place'>PLACE ORDER</span>
-        <span class='main_header-btn btn-print'>PRINT A QUOTE</span>
+        <span class='main_header-btn btn-place btn-hover'>PLACE ORDER</span>
+        <span class='main_header-btn btn-print btn-hover'>PRINT A QUOTE</span>
       </div>
     </div>
     <div class='main_header-help_center d-flex p-3'>
@@ -82,10 +83,10 @@
       <a class="main_header-mail" href="mailto:help@qtest.com">help@qtest.com</a>
     </div>
   </section>
-  <form class='d-flex flex-column justify-content-center align-items-center w-100' action='#'>
-    <section class='type_doc-wrap d-flex align-items-center flex-column'>
+  <form class='d-flex flex-column justify-content-center align-items-center w-100  pl-3 pr-3' action='#'>
+    <section class='type_doc-wrap d-flex align-items-center flex-column mb-3 w-100  pl-3 pr-3'>
       <h5 class='type_doc-title title'>SELECT WHAT YOU WANT TO TRANSLATE</h5>
-      <div class='type_doc-input_wrap d-flex w-100 align-items-center justify-content-around'>
+      <div class='type_doc-input_wrap d-flex w-100 align-items-center justify-content-between'>
         <input id='rbWebsite' class='radio-btn btn-file'
                type='radio'
                name="type"
@@ -124,26 +125,41 @@
         <h6 class='title-list-item'>Upload your documents (Doc, Docx, Text, PDF, Markdown)</h6>
       </div>
 
-
-      <div class="upload_input-wrapper">
-        <input type="file" class="upload_input hide-input" name="upload" id="uploadInput"
-               accept=".doc,.docx,.text,.pdf,.markdown" required="">
-        <label for="uploadInput" class="upload__input-label reset-input icon-element">
-          Upload a new file
-        </label>
+      <div class='pl-3 pr-3'>
+        <div class="upload_input-wrapper">
+          <input type="file"
+                 class="upload_input"
+                 id="uploadInput"
+                 name="upload"
+                 accept=".doc,.docx,.text,.pdf,.markdown"
+                 required=""
+          >
+          <button class="upload_input-btn br-3 btn-hover">
+            <svg
+                class="icon-cloud icon"
+                viewBox="0 0 640 512"
+            >
+              <path
+                  fill="currentColor"
+                  d="M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4zM393.4 288H328v112c0 8.8-7.2 16-16 16h-48c-8.8 0-16-7.2-16-16V288h-65.4c-14.3 0-21.4-17.2-11.3-27.3l105.4-105.4c6.2-6.2 16.4-6.2 22.6 0l105.4 105.4c10.1 10.1 2.9 27.3-11.3 27.3z"
+              ></path>
+            </svg>
+            Upload a new file
+          </button>
+        <p class="upload_request-text"><small>Please, upload your files.</small></p>
+        </div>
+        <table class="upload__table w-100 br-3">
+          <thead>
+          <tr>
+            <th>File name</th>
+            <th>File size</th>
+            <th>Number of words</th>
+            <th>Remove</th>
+          </tr>
+          </thead>
+          <tbody class="upload__table-body"></tbody>
+        </table>
       </div>
-      <p class="upload__request-text">Please, upload your files.</p>
-      <table class="upload__table">
-        <thead>
-        <tr>
-          <th>File name</th>
-          <th>File size</th>
-          <th>Number of words</th>
-          <th>Remove</th>
-        </tr>
-        </thead>
-        <tbody class="upload__table-body"></tbody>
-      </table>
     </section>
 
     <section class='mb-2'>
@@ -170,5 +186,6 @@
   </form>
 </main>
 <script src="/dist/js/main.min.js"></script>
+<!--<script src="js/main.js"></script>-->
 </body>
 </html>

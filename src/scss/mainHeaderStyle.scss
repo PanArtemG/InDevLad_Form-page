@@ -8,14 +8,6 @@
     flex-direction: column;
   }
 
-  .icon {
-    display: inline-block;
-    height: 1.4em;
-    width: 1.4em;
-    margin-right: 1em;
-
-  }
-
   &-order {
     border-bottom: 1px solid #cad1e2;
 
@@ -30,7 +22,6 @@
 
     .main_header-order-details {
       display: flex;
-      //flex-direction: column;
       align-items: center;
       justify-content: space-around;
       flex-wrap: wrap;
@@ -67,10 +58,6 @@
       font-size: .8em;
       font-weight: bold;
       cursor: pointer;
-    }
-
-    .main_header-btn:hover {
-      box-shadow: 0 0 2px 2px  $activeColor;
     }
 
     .btn-place {

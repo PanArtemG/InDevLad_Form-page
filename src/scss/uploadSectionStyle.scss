@@ -1,3 +1,29 @@
-.upload_input-wrapper {
-  padding: 0 1em;
+.upload_input {
+  display: none;
 }
+
+.upload_input-btn {
+  background-color: transparent;
+  padding: .5rem 1.5rem .5rem 3.5rem;
+  margin: 1.3rem 0 0;
+  font-size: .8em;
+  cursor: pointer;
+  position: relative;
+}
+
+.upload_input-btn:focus, .upload_input-btn:active {
+ outline: none;
+}
+
+.icon-cloud {
+  position: absolute;
+  left: 28px;
+}
+
+.upload_request-text > small {
+  display: inline-block;
+  color: red;
+  margin-left: 1.3rem;
+  margin-bottom: 1rem;
+}
+
