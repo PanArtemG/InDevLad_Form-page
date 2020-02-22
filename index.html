@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="../dist/css/style.min.css">
-  <link rel="stylesheet" href="image/font-awesome/css/font-awesome.min.css">
 </head>
 <body class='container'>
 <header class='d-flex align-items-center justify-content-center'>
@@ -122,7 +121,8 @@
         <div class='title-list-num d-flex align-items-center justify-content-center'>
           <span class=''>1</span>
         </div>
-        <h6 class='title-list-item'>Upload your documents (Doc, Docx, Text, PDF, Markdown)</h6>
+        <h6 class='upload_title title-list-item'>Upload your documents
+          (Doc, Docx, Text, PDF, Markdown)</h6>
       </div>
 
       <div class='pl-3 pr-3'>
@@ -146,19 +146,23 @@
             </svg>
             Upload a new file
           </button>
-        <p class="upload_request-text"><small>Please, upload your files.</small></p>
+        <p><small id='uploadRequestText' class="upload_request-text">Please, upload your files.</small></p>
         </div>
-        <table class="upload__table w-100 br-3">
-          <thead>
-          <tr>
-            <th>File name</th>
-            <th>File size</th>
-            <th>Number of words</th>
-            <th>Remove</th>
-          </tr>
-          </thead>
-          <tbody class="upload__table-body"></tbody>
-        </table>
+        <div id='uploadTable' class="upload_table not-active w-100 br-3 p-3">
+          <div class='upload_table-name d-flex align-items-center justify-content-start '>
+          <h6>File name</h6>
+          </div>
+          <div class='upload_table-size align-items-center justify-content-start'>
+            <h6>File size</h6>
+          </div>
+          <div class='upload_table-words align-items-center justify-content-start'>
+            <h6>Number of words</h6>
+          </div>
+          <div class='upload_table-remove d-flex align-items-center justify-content-center'>
+            <h6>Remove</h6>
+          </div>
+          <div id='loadFilesList' class='upload_table-load-files'></div>
+        </div>
       </div>
     </section>
 

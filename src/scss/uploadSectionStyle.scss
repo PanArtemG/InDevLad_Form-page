@@ -20,10 +20,52 @@
   left: 28px;
 }
 
-.upload_request-text > small {
+.upload_request-text {
   display: inline-block;
   color: red;
   margin-left: 1.3rem;
   margin-bottom: 1rem;
 }
 
+.upload_table {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.upload_table-name {
+  width: 35%;
+}
+
+.upload_table-properties {
+  display: flex;
+}
+
+@media screen and (min-width:320px) and (max-width: 640px ){
+  .upload_title{
+    white-space: pre-line;
+  }
+
+  .upload_table-name {
+    width: 75%;
+  }
+  .upload_table-size, .upload_table-words {
+    display: none;
+  }
+}
+
+.upload_table > div > h6 {
+  font-size: 10px;
+}
+
+
+.inactive {
+  opacity: 0;
+}
+
+.not-active {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
