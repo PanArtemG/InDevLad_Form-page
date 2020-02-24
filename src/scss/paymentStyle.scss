@@ -1,0 +1,43 @@
+@import "variable";
+
+.payment-wrap {
+  margin-left: 3rem;
+}
+
+.payment-subtitle {
+  font-size: 1em;
+}
+
+.payment_link {
+  text-decoration: underline;
+}
+
+.payment_input-wrapper {
+}
+
+.payment_input-wrapper label {
+  margin-top: .7rem;
+  margin-bottom: .3rem;
+  font-size: .8em;
+  font-weight: bold;
+}
+
+.payment_input, .payment_input:active .payment_input:focus {
+  box-sizing: border-box;
+  outline: none;
+  font-size: .8em;
+  width: 170px;
+  padding: 5px 5px;
+  margin-right: 3rem;
+  color: $mainFontColor;
+}
+
+#paymentInputCardDate {
+  width: 9rem;
+  text-align: center;
+}
+
+#paymentInputCardCode {
+  width: 4rem;
+}
+

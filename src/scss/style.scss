@@ -82,6 +82,30 @@ body {
 
 }
 
+
+.btn {
+  width: 40%;
+  max-width: 200px;
+  padding: 1em 0;
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px solid #a6adc7;
+  background-color: $bcgColor;
+  font-size: .8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: $secFontColor;
+}
+
+.main-btn {
+  margin-right: 1rem;
+  border-color: #53aeab;
+  background-color: #5ecbc8;
+  color: #ffffff;
+}
+
+
 @media screen and (min-width: 501px){
   .wrap-for-too-section {
     flex-direction: row;

@@ -57,8 +57,8 @@
         </div>
       </div>
       <div class='main_header-order-confirm d-flex align-items-center p-3'>
-        <span class='main_header-btn btn-place btn-hover'>PLACE ORDER</span>
-        <span class='main_header-btn btn-print btn-hover'>PRINT A QUOTE</span>
+        <button type="submit" class="order_btn-order btn main-btn  btn-hover">Place order</button>
+        <button type="button" class="order_btn-print btn btn-hover">Print a quote</button>
       </div>
     </div>
     <div class='main_header-help_center d-flex p-3'>
@@ -78,8 +78,8 @@
       </div>
       <p>If you need assistance while placing your order,contact one of you beloved Project Manager by phone or
         email.</p>
-      <a class="main_header-phone" href="tel:+9710555555">+971 (0) 555 555</a>
-      <a class="main_header-mail" href="mailto:help@qtest.com">help@qtest.com</a>
+      <a class="main_header-phone text-decoration-none" href="tel:+9710555555">+971 (0) 555 555</a>
+      <a class="main_header-mail text-decoration-none" href="mailto:help@qtest.com">help@qtest.com</a>
     </div>
   </section>
   <form class='d-flex flex-column justify-content-center align-items-center w-100  pl-3 pr-3' action='#'>
@@ -209,7 +209,7 @@
                  type='radio'
                  name="type"
                  value="casual"
-                 required>
+                 required=''>
           <label class=' d-flex align-items-center btn-hover' for='rbFriendly'>
             <svg class='icon-btn-desired'
                  fill=#6e7690
@@ -226,7 +226,7 @@
                  type='radio'
                  name="type"
                  value="pro"
-                 required>
+                 required=''>
           <label class='d-flex align-items-center btn-hover' for='rbCorporate'>
             <svg class='icon-btn-desired'
                  fill=#6e7690
@@ -243,7 +243,7 @@
                  type='radio'
                  name="type"
                  value="formal"
-                 required>
+                 required=''>
           <label class='d-flex align-items-center btn-hover' for='rbMedia'>
             <svg class='icon-btn-desired'
                  fill=#6e7690
@@ -291,78 +291,94 @@
     </div>
 
     <!--    PAYMENT-->
-    <section class='payment-section mb-2'>
+    <section class='payment-section mb-2 w-100'>
       <div class='title-list-wrap d-flex align-items-center justify-content-start'>
         <div class='title-list-num d-flex align-items-center justify-content-center'>
           <span class=''>5</span>
         </div>
         <h6 class='upload_title title-list-item'>Sign up and choose a payment method</h6>
       </div>
-      <p class="payment_subtitle">
-        Already have an account with us? <a href="#" class="payment__link">Sign in</a>.
-      </p>
-
-      <div class="payment_input-wrapper full_name">
-        <label for="paymentFullName" class="payment_input-label">full name</label>
-        <input class="payment_input" id="paymentFullName"
-               type="text"
-               placeholder="Enter your name" title="Minimum length is 8 characters"
-               minlength="8"
-               maxlength="32"
-               name="fullname"
-               required>
+      <div class='payment-wrap'>
+        <p class="payment_subtitle">
+          Already have an account with us? <a href="#" class="payment_link ">Sign in</a>.
+        </p>
+        <div class="payment_input-wrapper full_name d-flex flex-column align-items-start justify-content-center">
+          <label for="paymentFullName" class="payment_input-label text-uppercase">full name</label>
+          <input class="payment_input br-3" id="paymentFullName"
+                 type="text"
+                 title="Minimum length is 8 characters"
+                 minlength="8"
+                 maxlength="32"
+                 name="fullName"
+                 required>
+        </div>
+        <div class="payment_input-wrapper registration d-flex flex-wrap">
+          <div class='d-flex flex-column align-items-start justify-content-center'>
+            <label for="paymentInputEmail" class="payment__input-label text-uppercase">Email address</label>
+            <input class="payment_input br-3" id="paymentInputEmail"
+                   type="email"
+                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                   name="email"
+                   required>
+          </div>
+          <div class='d-flex flex-column align-items-start justify-content-center'>
+            <label for="paymentInputPassword" class="payment_input-label text-uppercase">Choose a password</label>
+            <input class="payment_input br-3" id="paymentInputPassword"
+                   type="password"
+                   title="It must contain at least 1 number, 1 uppercase letter. Do not use any whitespace characters"
+                   pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                   name="password"
+                   required>
+          </div>
+        </div>
+        <div class="payment_input-wrapper payment_card d-flex flex-wrap w-100">
+          <div class='payment_input-wrapper d-flex flex-column align-items-start justify-content-center'>
+            <label for="paymentInputCardNumber" class="payment__input-label text-uppercase">Card number</label>
+            <input class="payment_input br-3" id="paymentInputCardNumber"
+                   type="text"
+                   title="Enter your card number"
+                   autocomplete="cc-number"
+                   pattern="[0-9]{16}" minlength="16" maxlength="16"
+                   name="card number"
+                   required>
+          </div>
+          <div class='payment_input-wrapper d-flex flex-column align-items-start justify-content-center'>
+            <label for="paymentInputCardDate" class="payment_input-label text-uppercase">Expiry date</label>
+            <input class="payment_input br-3" id="paymentInputCardDate" placeholder="DD/MM/YY"
+                   type="text"
+                   title="Enter your card expiry date"
+                   minlength="8" maxlength="8"
+                   name="card date"
+                   required>
+          </div>
+          <div class='payment_input-wrapper d-flex flex-column align-items-start justify-content-center'>
+            <label for="paymentInputCardCode" class="payment_input-label text-uppercase">code</label>
+            <input class="payment_input br-3" id="paymentInputCardCode"
+                   type="password"
+                   title="Enter your card CVV code"
+                   pattern='[0-9]{3}'
+                   minlength="3" maxlength="3"
+                   name="card code"
+                   required>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="payment_input-wrapper registrarion">
-        <label for="paymentInputEmail" class="payment__input-label">Email address</label>
-        <span class="payment_input-title">Email address</span>
-        <input class="payment_input" id="paymentInputEmail"
-               type="email"
-               placeholder="Enter your email"
-               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-               name="email"
-               required>
-        <label for="paymentInputPassword" class="payment_input-label">Choose a password</label>
-        <input class="payment_input reset-input" id="paymentInputPassword"
-               type="password"
-               placeholder="Create your password"
-               title="It must contain at least 1 number, 1 uppercase letter. Do not use any whitespace characters"
-               pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
-               name="password"
-               required="">
-        <div class="payment__input-icon"></div>
+    <!--    FOOTER-->
+    <section class="form_footer mb-5 mt-5 w-100 ">
+      <div class="footer_input-wrapper text-right">
+        <input type="checkbox" class="footer_input hide-input" id="footerInput" name="terms-conditions" required="">
+        <label for="footerInput" class="footer_input-label">
+          <span class="footer_input-checkmark"></span>
+          <p class="footer_text">I agree to the <a href="#" class="footer_link text-decoration-none">Terms &amp;
+            Conditions</a></p>
+        </label>
       </div>
-
-      <div class="payment_input-wrapper payment_card">
-
-        <label for="paymentInputCardNumber" class="payment__input-label">Card number</label>
-        <input class="payment_input" id="paymentInputCardNumber"
-               type="text"
-               placeholder="0000000000000000"
-               title="Enter your card number"
-               autocomplete="cc-number"
-               pattern="[0-9]{16}" minlength="16" maxlength="16"
-               name="card number"
-               required>
-
-        <label for="paymentInputCardDate" class="payment_input-label">Expiry date</label>
-        <input class="payment_input reset-input" id="paymentInputCardDate" placeholder="MM/YY"
-               type="text"
-               title="Enter your card expiry date"
-               minlength="4" maxlength="4"
-               name="card date"
-               required>
-
-        <label for="paymentInputCardCode" class="payment_input-label">code</label>
-        <input class="payment_input" id="paymentInputCardCode"
-               placeholder="000"
-               type="password"
-               title="Enter your card CVV code"
-               minlength="3" maxlength="3"
-               name="card code"
-               required>
+      <div class="order_submit-wrapper order_submit-wrapper-footer d-flex justify-content-end">
+        <button type="submit" class="order_btn-order btn main-btn  btn-hover">Place order</button>
+        <button type="button" class="order_btn-print btn btn-hover">Print a quote</button>
       </div>
-
     </section>
   </form>
 </main>
