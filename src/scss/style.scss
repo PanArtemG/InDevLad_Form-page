@@ -5,10 +5,12 @@
 @import "selectDocTypeStyle";
 @import "uploadSectionStyle";
 @import "selectLanguageStyle";
+@import "desiredSectionStyle";
+@import "tellUsSectionStyle";
 
 * {
   margin: 0;
-  //padding: 0;
+  padding: 0;
   color: $mainFontColor;
 }
 
@@ -75,3 +77,13 @@ body {
   border: 1px solid #cad1e2;
 }
 
+.wrap-for-too-section {
+  flex-direction: column;
+
+}
+
+@media screen and (min-width: 641px){
+  .wrap-for-too-section {
+    flex-direction: row;
+  }
+}

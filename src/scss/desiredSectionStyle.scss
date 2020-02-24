@@ -1,0 +1,53 @@
+@import "variable";
+
+.desired-section {
+  width: 100%;
+}
+
+@media screen and (min-width: 641px){
+  .desired-section {
+    width: 50%;
+  }
+}
+
+.btn-desired {
+  display: none;
+}
+
+.btn-desired + label {
+  justify-content: center;
+  width: 70%;
+  box-sizing: border-box;
+  padding: .5rem 0;
+  border: 1px solid $border;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.icon-btn-desired {
+  height: 50%;
+  width: 1.2rem;
+  margin-right: 10px;
+}
+
+.label-desired {
+  font-size: .7em;
+  color: $mainFontColor;
+}
+
+.btn-desired:checked + label:after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #ffffff url('../image/check-mark.svg');
+  background-size: cover;
+}
+
+.btn-desired:checked + label {
+  border: 3px solid $activeColor;
+}
