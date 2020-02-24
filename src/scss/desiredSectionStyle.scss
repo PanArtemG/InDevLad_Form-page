@@ -4,10 +4,14 @@
   width: 100%;
 }
 
-@media screen and (min-width: 641px){
+@media screen and (min-width: 500px){
   .desired-section {
     width: 50%;
   }
+}
+
+.desired-input_wrap {
+  margin-left: 3rem;
 }
 
 .btn-desired {
@@ -16,7 +20,8 @@
 
 .btn-desired + label {
   justify-content: center;
-  width: 70%;
+  width: 100%;
+  max-width: 170px;
   box-sizing: border-box;
   padding: .5rem 0;
   border: 1px solid $border;
