@@ -5,14 +5,14 @@
 .upload_input-btn {
   background-color: transparent;
   padding: .5rem 1.5rem .5rem 3.5rem;
-  margin: 1.3rem 0 0;
+  margin: 1.3rem 0 0  2rem;
   font-size: .8em;
   cursor: pointer;
   position: relative;
 }
 
 .upload_input-btn:focus, .upload_input-btn:active {
- outline: none;
+  outline: none;
 }
 
 .icon-cloud {
@@ -23,7 +23,7 @@
 .upload_request-text {
   display: inline-block;
   color: red;
-  margin-left: 1.3rem;
+  margin-left: 3.3rem;
   margin-bottom: 1rem;
 }
 

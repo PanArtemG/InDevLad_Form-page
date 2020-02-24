@@ -83,6 +83,7 @@
     </div>
   </section>
   <form class='d-flex flex-column justify-content-center align-items-center w-100  pl-3 pr-3' action='#'>
+    <!--    type_doc-->
     <section class='type_doc-wrap d-flex align-items-center flex-column mb-3 w-100  pl-3 pr-3'>
       <h5 class='type_doc-title title'>SELECT WHAT YOU WANT TO TRANSLATE</h5>
       <div class='type_doc-input_wrap d-flex w-100 align-items-center justify-content-between'>
@@ -115,8 +116,8 @@
         </label>
       </div>
     </section>
-
-    <section class='mb-2 w-100'>
+    <!--    upload-->
+    <section class='upload_section mb-2 w-100'>
       <div class='title-list-wrap d-flex align-items-center justify-content-start'>
         <div class='title-list-num d-flex align-items-center justify-content-center'>
           <span class=''>1</span>
@@ -146,11 +147,11 @@
             </svg>
             Upload a new file
           </button>
-        <p><small id='uploadRequestText' class="upload_request-text">Please, upload your files.</small></p>
+          <p><small id='uploadRequestText' class="upload_request-text">Please, upload your files.</small></p>
         </div>
         <div id='uploadTable' class="upload_table not-active w-100 br-3 p-3">
           <div class='upload_table-name d-flex align-items-center justify-content-start '>
-          <h6>File name</h6>
+            <h6>File name</h6>
           </div>
           <div class='upload_table-size align-items-center justify-content-start'>
             <h6>File size</h6>
@@ -165,12 +166,34 @@
         </div>
       </div>
     </section>
-
-    <section class='mb-2'>
-      <div class='d-flex align-items-center justify-content-start'>
-        <span>2</span>
-        <h6 class='title title-list-item'>Choose your languages pairings</h6>
+    <!--    Choose your languages-->
+    <section class='language-section mb-2 w-100'>
+      <div class='title-list-wrap d-flex align-items-center justify-content-start w-100'>
+        <div class='title-list-num d-flex align-items-center justify-content-center'>
+          <span class=''>2</span>
+        </div>
+        <h6 class='upload_title title-list-item'>Choose your languages pairings</h6>
       </div>
+      <div class='language-section_select-container d-flex flex-column justify-content-center w-100 '>
+        <div class='language-section_select-wrap d-flex align-items-center justify-content-start mb-2'>
+<!--          <label class='m-0 mr-2' for='selectFrom'>FROM</label>-->
+          <select class='language-section_select br-3' name='selectFrom' id='selectFrom' required>
+            <option value='en'>English</option>
+            <option value='ua'>Українська</option>
+            <option value='ru'>Руский</option>
+          </select>
+        </div>
+        <div class='language-section_select-wrap select-to-before d-flex align-items-center justify-content-start'>
+<!--          <label class='m-0 mr-2' for='selectTo'>TO</label>-->
+          <select class='language-section_select br-3' name='selectTo' id='selectTo' required>
+            <option value=''>Choose language</option>
+            <option value='en'>English</option>
+            <option value='ua'>Українська</option>
+            <option value='ru'>Руский</option>
+          </select>
+        </div>
+      </div>
+
     </section>
 
     <section class='mb-2'>

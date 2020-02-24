@@ -1,0 +1,54 @@
+@import "variable";
+
+.language-section_select-wrap {
+  width: 80%;
+  margin-left: 6rem;
+  position: relative;
+}
+
+.language-section_select, .language-section_select:active, .language-section_select:focus {
+  height: 2rem;
+  width: 8.5rem;
+
+  padding-left: 5px;
+  background-color: $bcgColor;
+  outline: none;
+  cursor: pointer;
+  font-size: .8em;
+  text-align: center;
+  position: relative;
+}
+
+.language-section_select-wrap:before {
+  content: "FROM";
+  display: block;
+  position: absolute;
+  left: -40px;
+  top: 6px;
+  width: 20px;
+  height: 20px;
+  font-size: .8rem;
+}
+
+.select-to-before:before {
+  content: 'TO';
+  left: -22px;
+}
+
+.language-section_select-wrap:after {
+  content: '';
+  position: absolute;
+  height: 2rem;
+  left: 100px;
+  border-right: 1px solid $border ;
+}
+
+
+.language-section_select option {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 640px) {
+}

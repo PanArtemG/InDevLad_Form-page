@@ -4,10 +4,11 @@
 @import "mainHeaderStyle";
 @import "selectDocTypeStyle";
 @import "uploadSectionStyle";
+@import "selectLanguageStyle";
 
 * {
   margin: 0;
-  padding: 0;
+  //padding: 0;
   color: $mainFontColor;
 }
 
@@ -73,3 +74,4 @@ body {
   background-color: #fff;
   border: 1px solid #cad1e2;
 }
+
