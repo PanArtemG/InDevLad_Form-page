@@ -1,10 +1,81 @@
+@import "variable";
+
 .tell-us_section {
   width: 100%;
 }
 
-
-@media screen and (min-width: 500px){
+@media screen and (min-width: 500px) {
   .tell-us_section {
     width: 50%;
   }
+}
+
+.tell-us_range-wrap {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.tell-us_range::-webkit-slider-thumb {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: $cursorColor;
+  -webkit-appearance: none;
+  margin-top: -5px;
+}
+
+.tell-us_range {
+  width: 90%;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.tell-us_range:before {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #eec076;
+  opacity: .7;
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
+.tell-us_range:after {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: $cursorColor;
+  opacity: .7;
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
+.tell-us_value-wrap {
+  position: relative;
+}
+
+.tell-us_icon {
+  position: absolute;
+  top: 15px;
+  left: 13px;
+}
+
+.tell-us_value {
+  padding: 1rem 1rem 1rem 3rem;
+  font-size: 1em;
+}
+
+.tell-us_value-text {
+}
+
+#valueUrgent {
+  font-weight: bold;
+  color: $cursorColor;
 }
