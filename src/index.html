@@ -265,16 +265,17 @@
           <h6 class='upload_title title-list-item'>Tel us haw</h6>
         </div>
         <div class='tell-us_range-wrap'>
-        <div class=' d-flex flex-column align-items-center justify-content-center w-100'>
-          <label for="tellUs">Tell us how urgent this job is</label>
-          <input type="range" class="tell-us_range custom-range" min="0" max="2" step='1' id="tellUs">
-        </div>
+          <div class=' d-flex flex-column align-items-center justify-content-center w-100'>
+            <label for="tellUs">Tell us how urgent this job is</label>
+            <input type="range" class="tell-us_range custom-range" min="0" max="2" step='1' id="tellUs">
+          </div>
           <div class='tell-us_value-wrap text-justify'>
             <svg class='tell-us_icon icon'
-                fill= #6e7690
-                viewBox="0 0 524.235 524.235"
+                 fill=#6e7690
+                 viewBox="0 0 524.235 524.235"
             >
-              <path d="M262.118 0C117.588 0 0 117.588 0 262.118s117.588 262.118 262.118 262.118 262.118-117.588 262.118-262.118S406.647 0 262.118 0zm17.05 417.639c-12.453 2.076-37.232 7.261-49.815 8.303-10.651.882-20.702-5.215-26.829-13.967a32.756 32.756 0 01-3.968-29.997l49.547-136.242h-51.515c-.044-28.389 21.25-49.263 48.485-57.274 12.997-3.824 37.212-9.057 49.809-8.255 7.547.48 20.702 5.215 26.829 13.967a32.756 32.756 0 013.968 29.997l-49.547 136.242h51.499c.01 28.356-20.49 52.564-48.463 57.226zm15.714-253.815c-18.096 0-32.765-14.671-32.765-32.765 0-18.096 14.669-32.765 32.765-32.765s32.765 14.669 32.765 32.765c0 18.095-14.668 32.765-32.765 32.765z"></path>
+              <path
+                  d="M262.118 0C117.588 0 0 117.588 0 262.118s117.588 262.118 262.118 262.118 262.118-117.588 262.118-262.118S406.647 0 262.118 0zm17.05 417.639c-12.453 2.076-37.232 7.261-49.815 8.303-10.651.882-20.702-5.215-26.829-13.967a32.756 32.756 0 01-3.968-29.997l49.547-136.242h-51.515c-.044-28.389 21.25-49.263 48.485-57.274 12.997-3.824 37.212-9.057 49.809-8.255 7.547.48 20.702 5.215 26.829 13.967a32.756 32.756 0 013.968 29.997l-49.547 136.242h51.499c.01 28.356-20.49 52.564-48.463 57.226zm15.714-253.815c-18.096 0-32.765-14.671-32.765-32.765 0-18.096 14.669-32.765 32.765-32.765s32.765 14.669 32.765 32.765c0 18.095-14.668 32.765-32.765 32.765z"></path>
             </svg>
             <p class='tell-us_value br-3'>
               With an I <span class='tell-us_value-text'> <span id='valueUrgent'>GOT TIME</span>  timeline set up, our
@@ -288,13 +289,80 @@
         </div>
       </section>
     </div>
-    <section class='mb-2'>
+
+    <!--    PAYMENT-->
+    <section class='payment-section mb-2'>
       <div class='title-list-wrap d-flex align-items-center justify-content-start'>
         <div class='title-list-num d-flex align-items-center justify-content-center'>
           <span class=''>5</span>
         </div>
         <h6 class='upload_title title-list-item'>Sign up and choose a payment method</h6>
       </div>
+      <p class="payment_subtitle">
+        Already have an account with us? <a href="#" class="payment__link">Sign in</a>.
+      </p>
+
+      <div class="payment_input-wrapper full_name">
+        <label for="paymentFullName" class="payment_input-label">full name</label>
+        <input class="payment_input" id="paymentFullName"
+               type="text"
+               placeholder="Enter your name" title="Minimum length is 8 characters"
+               minlength="8"
+               maxlength="32"
+               name="fullname"
+               required>
+      </div>
+
+      <div class="payment_input-wrapper registrarion">
+        <label for="paymentInputEmail" class="payment__input-label">Email address</label>
+        <span class="payment_input-title">Email address</span>
+        <input class="payment_input" id="paymentInputEmail"
+               type="email"
+               placeholder="Enter your email"
+               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+               name="email"
+               required>
+        <label for="paymentInputPassword" class="payment_input-label">Choose a password</label>
+        <input class="payment_input reset-input" id="paymentInputPassword"
+               type="password"
+               placeholder="Create your password"
+               title="It must contain at least 1 number, 1 uppercase letter. Do not use any whitespace characters"
+               pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+               name="password"
+               required="">
+        <div class="payment__input-icon"></div>
+      </div>
+
+      <div class="payment_input-wrapper payment_card">
+
+        <label for="paymentInputCardNumber" class="payment__input-label">Card number</label>
+        <input class="payment_input" id="paymentInputCardNumber"
+               type="text"
+               placeholder="0000000000000000"
+               title="Enter your card number"
+               autocomplete="cc-number"
+               pattern="[0-9]{16}" minlength="16" maxlength="16"
+               name="card number"
+               required>
+
+        <label for="paymentInputCardDate" class="payment_input-label">Expiry date</label>
+        <input class="payment_input reset-input" id="paymentInputCardDate" placeholder="MM/YY"
+               type="text"
+               title="Enter your card expiry date"
+               minlength="4" maxlength="4"
+               name="card date"
+               required>
+
+        <label for="paymentInputCardCode" class="payment_input-label">code</label>
+        <input class="payment_input" id="paymentInputCardCode"
+               placeholder="000"
+               type="password"
+               title="Enter your card CVV code"
+               minlength="3" maxlength="3"
+               name="card code"
+               required>
+      </div>
+
     </section>
   </form>
 </main>
