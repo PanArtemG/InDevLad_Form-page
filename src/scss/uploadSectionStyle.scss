@@ -1,3 +1,5 @@
+@import "variable";
+
 .upload_input {
   display: none;
 }
@@ -33,20 +35,34 @@
 }
 
 .upload_table-name {
-  width: 35%;
+  width: 40%;
+}
+
+.table-item {
+  width: 20%;
+}
+
+.remove-icon {
+  margin: 0;
+  cursor: pointer;
+  color: $secFontColor;
+}
+
+.upload_table-size, .upload_table-words {
+  display: flex;
 }
 
 .upload_table-properties {
   display: flex;
 }
 
-@media screen and (min-width:320px) and (max-width: 640px ){
+@media screen and (min-width:320px) and (max-width: 900px ){
   .upload_title{
     white-space: pre-line;
   }
 
   .upload_table-name {
-    width: 75%;
+    width: 80%;
   }
   .upload_table-size, .upload_table-words {
     display: none;

@@ -6,6 +6,11 @@
   text-align: center;
 }
 
+.type_doc-input_wrap {
+  height: 20vh;
+  box-sizing: border-box;
+}
+
 .title {
   border-bottom: 1px solid $border;
   font-weight: 400;
@@ -19,6 +24,7 @@
 }
 
 .btn-file + label {
+  box-sizing: border-box;
   justify-content: center;
   width: 30%;
   border: 1px solid $border;
