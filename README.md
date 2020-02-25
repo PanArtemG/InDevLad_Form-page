@@ -1,9 +1,10 @@
-# Test task for InDevLad
+Task - LOGIN PAGE.
 
-Stack:
+Stack: 
+- HTML5;
+- SCSS (CSS3);
+- JS;
+- GULP.
 
-HTML5;
-SCSS (CSS3);
-JS;
-GULP.
-GitHubPages: 
+
+GitHubPages:
