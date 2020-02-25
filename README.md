@@ -1,4 +1,4 @@
-#Task - LOGIN PAGE.
+#InDevLab "Task - FORM PAGE".
 
 Stack: 
 - HTML5;
