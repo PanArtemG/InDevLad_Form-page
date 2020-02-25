@@ -60,3 +60,43 @@
     }
   }
 }
+
+@media screen and (min-width: 501px) {
+  .main_header {
+    flex-direction: row;
+
+
+    &-order_wrap {
+      flex-direction: row;
+      width: 70%;
+      border: none;
+
+      .main_header-order {
+        border: none;
+      }
+
+      .main_header-order-confirm {
+        width: 40%;
+        flex-direction: column;
+        border: none;
+        border-right: 1px solid $border;
+
+        .btn {
+          width: 90%;
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
+    }
+
+    .main_header-help_center {
+      width: 30%;
+      align-items: center;
+
+      p {
+        width: 60%;
+      }
+
+    }
+  }
+}
