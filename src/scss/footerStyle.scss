@@ -1,0 +1,21 @@
+.footer_link {
+  text-decoration: underline;
+}
+
+.footer_input-wrapper {
+
+}
+
+.order_submit-wrapper-footer {
+  width: 100%;
+}
+
+@media screen and (min-width: 801px){
+  .footer_input-wrapper {
+    width: 50%;
+  }
+
+  .order_submit-wrapper-footer {
+    width: 50%;
+  }
+}
