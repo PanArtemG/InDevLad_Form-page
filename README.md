@@ -1,5 +1,3 @@
-# InDevLad_Form-page
-
 # Test task for InDevLad
 
 Stack:
